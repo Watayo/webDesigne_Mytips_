@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+</head>
+
+<body>
+  <script>
+    function setup() {
+      createCanvas(windowWidth, windowHeight, WEBGL);
+      frameRate(60);
+    }
+
+    function draw() {
+      background(0);
+      ambientLight(160);
+      pointLight(255, 255, 255, -100, -100, 400);
+      noStroke();
+      ambientMaterial(255);
+
+      rotateY(frameCount / 400);
+      rotateX(frameCount / 600);
+
+      for (let i = 0; i < 255; i++) {
+        push();
+        ambientMaterial(i * 2, 127, 255 - i * 2);
+        rotateX(frameCount / 240.0 + i / 20.0);
+        rotateY(frameCount / 240.0 + i / 22.0);
+        rotateZ(frameCount / 240.0 + i / 24.0);
+        box(width / 4.0);
+        pop();
+      }
+    }
+  </script>
+</body>
+</html>

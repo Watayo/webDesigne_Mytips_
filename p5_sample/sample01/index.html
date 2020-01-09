@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+</head>
+
+<body>
+  <script>
+    function setup() {
+      frameRate(60);
+      createCanvas(400, 400);
+      colorMode(HSB, 360, 100, 100, 100);
+      blendMode(SCREEN);
+      noStroke();
+      noLoop();
+    }
+
+    function draw() {
+      background(90, 20, 10, 100);
+      translate(40, height / 2.0);
+      //rotateX(frameCount / 20);
+      preWavenum = 1;
+      for (wavenum = 1; wavenum <= 3; wavenum++) {
+        for (lineNo = -2; lineNo < 5; lineNo += 0.5) {
+          for (radians = 0; radians < TWO_PI; radians += 0.01) {
+            eHue = lineNo * 60;
+            eSat = 100 - radians * 5;
+            eBri = radians * wavenum * wavenum * 3;
+
+            ex = radians * 25 * (preWavenum + wavenum - 1);
+            ey = -sin(radians) * radians * lineNo * wavenum * wavenum * 2.0;
+            eR = lineNo;
+            fill(eHue, eSat, eBri, 100);
+            ellipse(
+              ex, ey, eR, eR
+            );
+          }
+        }
+        preWavenum = wavenum;
+      }
+    }
+  </script>
+</body>
+</html>
