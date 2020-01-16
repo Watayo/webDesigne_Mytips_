@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Futura-thin';
+    src: url('../fonts/Futura-BooObl.ttf');
+}
+
+@font-face {
+    font-family: 'Futura-Boo';
+    src: url('../fonts/Futura-Boo.ttf');
+}
+
+@font-face {
+    font-family: "Osaka";
+    src: local("Osaka")
+}
+
+
+.bg-slider {
+    width: 100vw;
+    height: 100vh;
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-slider_title{
+    margin: auto;
+}
+
+.logo {
+   width: 890px;
+}
+
+.bg-slider_title h1 {
+/*    background-color: red;*/
+    font-family: 'Futura-thin';
+    font-size: 45px;
+    color: aliceblue;
+    margin: 37.5px 0;
+    text-align: center;
+}
+
+.introduction {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.introduction h1{
+    font-family: 'Futura-Boo'; 
+    color: #3D5CDB;
+    text-align: center;
+    margin: 44.4px auto;
+    font-size: 53px;
+}
+
+.content {
+    margin-top: 100px;
+    overflow: hidden;
+    font-family: "Osaka";
+    font-size: 16px;
+    color: #333333;
+}
+
+
+.content img {
+    float: left;
+}
+.right-content {
+/*    background-color: red;*/
+    float: left;
+    width: 500px;
+    margin-left: 20px;
+}
+
+
+.left-content {
+/*    background-color: brown;*/
+    float: left;
+    width: 500px;
+    margin-right: 20px;
+}
