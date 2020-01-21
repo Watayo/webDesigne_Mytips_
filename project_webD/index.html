@@ -6,17 +6,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jquery.bgswitcher.js"></script>
+    
     <script>
         jQuery(function($) {
             $(".bg-slider").bgSwitcher({
-                images: ['images/hero.jpg', 'images/introduction_001.jpg', '/images/introduction_002.jpg']
+                images: ['images/hero.jpg', 'images/hero02.jpg', 'images/introduction_001.jpg', '/images/introduction_002.jpg']
             });
         });
     </script>
     <script src="js/slick.min.js"></script>
-    <script src="js/particles.js"></script>
+    <script>
+        jQuery(function($) {
+            $(".slider").slick({
+                dots: true,
+                slidesToShow: 4,
+                slidesToScroll: 4
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="bg-slider">
@@ -39,32 +49,51 @@
                 <br>誰でも最初は初心者。それを一番知っている我々がプログラ
                 <br>ミングへの第一歩を踏み出すお手伝いをさせていただきま
                 <br>す。
-            </p>    
+            </p>
+            <div class="btn">
+                <button type="button" class="button1">会員登録</button>
+            </div>
             </div>
         </div>
         <div class="content" id="content02">
             <div class="left-content">
-                <p>
-                    <br>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミ
-                    <br>ングを学びます。コースは全部で7つ準備をしています。
-                    <br>WebデザインからWebサービス、3DゲームやiPhoneアプリ
-                    <br>まで幅広くお楽しみいただけます。
-                    <br>自分の想いをカタチにして発信することをぜひこの場で体験
-                    <br>してみてください。世界が変わって見えるかもしれません。
-                </p>
+            <p>
+                <br>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミ
+                <br>ングを学びます。コースは全部で7つ準備をしています。
+                <br>WebデザインからWebサービス、3DゲームやiPhoneアプリ
+                <br>まで幅広くお楽しみいただけます。
+                <br>自分の想いをカタチにして発信することをぜひこの場で体験
+                <br>してみてください。世界が変わって見えるかもしれません。
+            </p>
+            <div class="btn">
+                <button type="button" class="button2">会員登録</button>
+            </div>
             </div>
             <img src="images/introduction_002.jpg" alt="intro02" width="480">    
         </div>
     </div>
+    
+     <!--particleの読み込み-->
     <div class="courses">
-        
-    </div>
+        <h1>Courses</h1>
+        <div id="particles-js"></div>
+    </div>       
+    <!--------------------------------> 
     <div class="images">
-        
+        <h1>Images</h1>
+        <ul class = "slider">
+            <li><img src="images/hero.jpg" alt="image01"></li>
+            <li><img src="images/hero02.jpg" alt="image02"></li>
+            <li><img src="images/introduction_001.jpg" alt="image03"></li>
+            <li><img src="images/introduction_002.jpg" alt="image04"></li>
+        </ul>
     </div>
     <div class="access">
         
     </div>
+    <script src="js/particles.js"></script>
+    <script src="js/set.js"></script>
+    
     
 </body>
 </html>
