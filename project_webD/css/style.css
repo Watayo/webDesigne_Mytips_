@@ -13,7 +13,9 @@
     src: local("Osaka")
 }
 
-
+.container {
+    
+}
 .bg-slider {
     width: 100vw;
     height: 100vh;
@@ -124,14 +126,26 @@ h1{
     z-index: 0;
 }
 
+.images {
+    margin: auto;
+}
+
+.slider_div {
+    margin: auto;
+}
+
 .slider {
-    
+    width: 80%;
 }
 .slider img {
     width: 100%;
 }
 
-.slider .slick-next { right: 17px;　z-index: 100;}
-.slider .slick-prev { left: 23px; z-index: 100;}
+.access {
+    margin: auto;
+}
 
+.map {
+    margin: auto;
+}
 
