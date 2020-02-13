@@ -13,28 +13,45 @@
     src: local("Osaka")
 }
 
-.container {
-    
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .header {
     width: 100vw;
-    
 }
 
-nav{
-    
-    overflow: hidden;
+.box {
+    position: relative;
 }
-nav li {
-    float: left;
-    list-style-type: none;
+
+.right-hrizontal {
+    display: flex;
+    /* その直下の要素が並列になるスタイル */
+    justify-content: flex-end;
+    /* アイテムを右に寄せる */
+    align-items: right;
+    /* アイテムを右付近にまとめる */
+    flex-wrap: wrap;
+    /* 複数行に要素をまとめるか否か wrap の場合まとめる */
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 nav a {
-    font-size: 26px;
-    display: inline-block;
-    color: #000;
+    font-family: 'Futura-thin';
+    font-size: 35px;
+    color: white;
+    text-decoration: none; 
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 20px;
+    
 }
 
 .bg-slider {
@@ -113,7 +130,6 @@ h1{
     margin-left: 60px;
 }
 
-
 .btn {
     margin: 35px auto;
     text-align: center;
@@ -142,6 +158,7 @@ h1{
     background-color: #DDEEFF; 
     padding-top: 5px;
     padding-bottom: 50px;  
+    position: relative;
 }
 
 #particles-js {
@@ -266,16 +283,20 @@ h1{
     padding: 5px 40px;
     border-radius: 12px;
 }
+
 .images {
     margin: auto;
 }
 
 .slider_div {
+    margin: auto;
     text-align: center;
+    align-items: center;
 }
 
 .slider {
     width: 80%;
+    margin:0 auto;
 }
 .slider img {
     width: 100%;
