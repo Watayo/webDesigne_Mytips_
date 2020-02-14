@@ -44,7 +44,7 @@
 }
 
 nav a {
-    font-family: 'Futura-thin';
+    font-family: 'Futura';
     font-size: 35px;
     color: white;
     text-decoration: none; 
@@ -52,6 +52,11 @@ nav a {
     margin-right: 40px;
     margin-top: 20px;
     
+}
+
+nav a:hover {
+    color: #3D5CDB;
+    transition: 0.5s ;
 }
 
 .bg-slider {
@@ -77,6 +82,7 @@ nav a {
 .bg-slider_title h1 {
 /*    background-color: red;*/
     font-family: 'Futura-thin';
+    font-weight: 700;
     font-size: 45px;
     color: aliceblue;
     margin: 37.5px 0;
@@ -92,6 +98,7 @@ nav a {
 /*よく知らんけど、全部同じで指定していいぽい*/
 h1{
     font-family: 'Futura-Boo'; 
+    font-weight: 800;
     color: #3D5CDB;
     text-align: center;
     margin: 44.4px auto;
@@ -99,7 +106,6 @@ h1{
 }
 
 .content {
-    margin-top: 100px;
     overflow: hidden;
     font-family: "Osaka";
     font-size: 16px;
@@ -131,12 +137,15 @@ h1{
 }
 
 .btn {
+    font-family: "Futura-Boo";
+    font-weight: 900;
     margin: 35px auto;
     text-align: center;
 }
 
 .button1 {
     font-family: "Futura-Boo";
+    font-weight: 900;
     font-size: 20px;
     color: #fff;
     background-color: #3d5cdb;
@@ -146,6 +155,7 @@ h1{
 /*フォント違う！！！*/
 .button2 {
     font-family: "Futura-Boo";
+    font-weight: 900;
     font-size: 20px;
     color: #fff;
     background-color: #ffbf00;
@@ -185,6 +195,7 @@ h1{
     border-radius:  5px;    /* 角丸指定 */
     margin: 0 10px 20px;            /* 周りの余白指定 */
     color:  #000;           /* 文字色指定 */
+
 }
 
 .grid1_child {
@@ -211,16 +222,27 @@ h1{
 
 .content-div {
     text-align: center;
+    /* その直下の要素が並列になるスタイル */
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
 }
+ss
+.content-div img {
+    
+}
+
 .button-html {
     margin: 35px auto;
     text-align: center;
     font-family: "Futura-Boo";
     font-size: 13px;
     color: #fff;
-    background-color: #3d5cdb;
-    padding: 5px 40px;
+    background-color: #F16529;
+    padding: 10px 20px;
     border-radius: 12px;
+    font-family: "Futura-Boo";
+    font-weight: 900;
 }
 .button-css {
     margin: 35px auto;
@@ -228,9 +250,11 @@ h1{
     font-family: "Futura-Boo";
     font-size: 13px;
     color: #fff;
-    background-color: #3d5cdb;
-    padding: 5px 40px;
+    background-color: #29A9DF;
+    padding: 10px 20px;
     border-radius: 12px;
+    font-family: "Futura-Boo";
+    font-weight: 900;
 }
 
 .button-unity {
@@ -239,9 +263,11 @@ h1{
     font-family: "Futura-Boo";
     font-size: 13px;
     color: #fff;
-    background-color: #3d5cdb;
-    padding: 5px 40px;
+    background-color: #333333;
+    padding: 10px 20px;
     border-radius: 12px;
+    font-family: "Futura-Boo";
+    font-weight: 900;
 }
 .button-ruby {
     margin: 35px auto;
@@ -249,9 +275,11 @@ h1{
     font-family: "Futura-Boo";
     font-size: 13px;
     color: #fff;
-    background-color: #3d5cdb;
-    padding: 5px 40px;
+    background-color: #FF5252;
+    padding: 10px 20px;;
     border-radius: 12px;
+    font-family: "Futura-Boo";
+    font-weight: 900;
 }
 .button-js {
     margin: 35px auto;
@@ -259,9 +287,11 @@ h1{
     font-family: "Futura-Boo";
     font-size: 13px;
     color: #fff;
-    background-color: #3d5cdb;
-    padding: 5px 40px;
+    background-color: #FED700;
+    padding: 10px 20px;
     border-radius: 12px;
+    font-family: "Futura-Boo";
+    font-weight: 900;
 }
 .button-swift {
     margin: 35px auto;
@@ -269,9 +299,11 @@ h1{
     font-family: "Futura-Boo";
     font-size: 13px;
     color: #fff;
-    background-color: #3d5cdb;
-    padding: 5px 40px;
+    background-color: #FE7536;
+    padding: 10px 20px;
     border-radius: 12px;
+    font-family: "Futura-Boo";
+    font-weight: 900;
 }
 .button-go {
     margin: 35px auto;
@@ -279,9 +311,11 @@ h1{
     font-family: "Futura-Boo";
     font-size: 13px;
     color: #fff;
-    background-color: #3d5cdb;
-    padding: 5px 40px;
+    background-color: #73CEDD;
+    padding: 10px 20px;
     border-radius: 12px;
+    font-family: "Futura-Boo";
+    font-weight: 900;
 }
 
 .images {
@@ -308,3 +342,11 @@ h1{
     text-align: center;
 }
 
+footer p {
+    font-family: "Futura-Boo";
+    font-size: 16px;
+    color: #3D5CDB;
+    font-weight: 900; 
+    margin: 70px auto 30px;
+    text-align: center;
+}
