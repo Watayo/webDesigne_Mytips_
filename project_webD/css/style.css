@@ -14,6 +14,7 @@
 }
 
 * {
+    font-family: serif;
     margin: 0;
     padding: 0;
 }
@@ -56,7 +57,7 @@ nav a {
 
 nav a:hover {
     color: #3D5CDB;
-    transition: 0.5s ;
+    transition: 0.5s;
 }
 
 .bg-slider {
@@ -120,20 +121,25 @@ h1{
 .right-content {
     float: left;
     width: 520px;
+    line-height: 32px;
 }
 
 .right-content p {
     margin-left: 60px;
+    font-weight: 600;
 }
 
 
 .left-content {
     float: left;
     width: 520px;
+    line-height: 32px;
 }
 
 .left-content p {
-    margin-left: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: 600;
 }
 
 .btn {
@@ -163,12 +169,12 @@ h1{
     border-radius: 12px;
 }
 
-
 .courses {
     background-color: #DDEEFF; 
     padding-top: 5px;
     padding-bottom: 50px;  
     position: relative;
+    z-index: 0;
 }
 
 #particles-js {
@@ -180,14 +186,20 @@ h1{
     right: 0;
     bottom: 0;
     display: block;
+    z-index: -1;
+}
+
+.grids {
     z-index: 0;
 }
 
 .grid1 {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-auto-rows: 345px;
-    justify-content: center; 
+    grid-template-columns: repeat(4, 265px);
+    grid-auto-rows: 360px;
+    justify-content: center;
+    z-index: 0;
+    
 }
 
 .grid1_child {
@@ -195,18 +207,50 @@ h1{
     border-radius:  5px;    /* 角丸指定 */
     margin: 0 10px 20px;            /* 周りの余白指定 */
     color:  #000;           /* 文字色指定 */
+    background-color:  #fff;
+    z-index: 0;
 
 }
 
-.grid1_child {
-    background-color:  #fff;     /* 背景色 */
+
+.img-html_css_js {
+    margin-top: 25px;
+}
+
+.p-html_css_js {
+    margin-top: 30px;
+}
+
+.img-unity_ruby {
+    margin-top: 30px;
+}
+
+.p-unity_ruby {
+    margin-top: 65px;
+}
+
+.img-swift {
+    margin-top: 50px;
+}
+
+.p-swift {
+    margin-top: 60px;
+}
+
+.img-go {
+    margin-top: 45px;
+}
+
+.p-go {
+    margin-top: 60px;
 }
 
 .grid2 {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-auto-rows: 345px;
-    justify-content: center; 
+    grid-template-columns: repeat(3, 260px);
+    grid-auto-rows: 360px;
+    justify-content: center;
+    z-index: 0;
 }
 
 .grid2_child {
@@ -214,10 +258,8 @@ h1{
     border-radius:  5px;    /* 角丸指定 */
     margin: 10px;            /* 周りの余白指定 */
     color:  #000;           /* 文字色指定 */
-}
-
-.grid2_child {
     background-color: #fff;     /* 背景色 */
+    z-index: 0;
 }
 
 .content-div {
@@ -226,14 +268,16 @@ h1{
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
-}
-ss
-.content-div img {
     
 }
 
+.content-div p {
+    font-family: serif;
+    font-weight: 900;
+}
+
 .button-html {
-    margin: 35px auto;
+    margin: 20px auto;
     text-align: center;
     font-family: "Futura-Boo";
     font-size: 13px;
@@ -243,9 +287,10 @@ ss
     border-radius: 12px;
     font-family: "Futura-Boo";
     font-weight: 900;
+    
 }
 .button-css {
-    margin: 35px auto;
+    margin: 20px auto;
     text-align: center;
     font-family: "Futura-Boo";
     font-size: 13px;
@@ -258,7 +303,7 @@ ss
 }
 
 .button-unity {
-    margin: 35px auto;
+    margin: 20px auto;
     text-align: center;
     font-family: "Futura-Boo";
     font-size: 13px;
@@ -269,8 +314,9 @@ ss
     font-family: "Futura-Boo";
     font-weight: 900;
 }
+
 .button-ruby {
-    margin: 35px auto;
+    margin: 20px auto;
     text-align: center;
     font-family: "Futura-Boo";
     font-size: 13px;
@@ -281,8 +327,9 @@ ss
     font-family: "Futura-Boo";
     font-weight: 900;
 }
+
 .button-js {
-    margin: 35px auto;
+    margin: 20px auto;
     text-align: center;
     font-family: "Futura-Boo";
     font-size: 13px;
@@ -294,7 +341,7 @@ ss
     font-weight: 900;
 }
 .button-swift {
-    margin: 35px auto;
+    margin: 20px auto;
     text-align: center;
     font-family: "Futura-Boo";
     font-size: 13px;
@@ -305,8 +352,9 @@ ss
     font-family: "Futura-Boo";
     font-weight: 900;
 }
+
 .button-go {
-    margin: 35px auto;
+    margin: 15px auto;
     text-align: center;
     font-family: "Futura-Boo";
     font-size: 13px;
@@ -316,6 +364,34 @@ ss
     border-radius: 12px;
     font-family: "Futura-Boo";
     font-weight: 900;
+}
+
+.button-html:hover {
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.button-css:hover {
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.button-unity:hover {
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.button-ruby:hover {
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.button-swift:hover {
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.button-go:hover {
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.button-js:hover {
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.13);
 }
 
 .images {
@@ -336,6 +412,9 @@ ss
     width: 100%;
 }
 
+.access {
+    margin-top: 120px; 
+}
 
 /*iframe要素はdivで囲ってからtext-align: center;で中央寄せできるなるほど*/
 .map {
@@ -347,6 +426,6 @@ footer p {
     font-size: 16px;
     color: #3D5CDB;
     font-weight: 900; 
-    margin: 70px auto 30px;
+    margin: 60px auto 30px;
     text-align: center;
 }
