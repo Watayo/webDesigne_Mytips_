@@ -2,6 +2,9 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
     <title>HappyHack</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
@@ -21,11 +24,20 @@
     <script src="js/slick.min.js"></script>
     <script>
         jQuery(function($) {
-            $(".slider").slick({
-                dots: true,
-                slidesToShow: 4,
-                slidesToScroll: 1
-            });
+            if(window.matchMedia('(min-width: 600ox)').matches) {
+                $(".slider").slick({
+                    dots: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }); 
+            } else {
+                $(".slider").slick({
+                    dots: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }); 
+            }
+            
         });
     </script>
 </head>
@@ -36,10 +48,10 @@
         <div class="box">
             <div class="navigation">
                 <nav class="right-hrizontal">
-                    <a href="#">Introduction</a>
-                    <a href="#">Courses</a>
-                    <a href="#">Images</a>
-                    <a href="#">Access</a>       
+                    <a href="#1">Introduction</a>
+                    <a href="#2">Courses</a>
+                    <a href="#3">Images</a>
+                    <a href="#3">Access</a>       
                 </nav>
             </div>
             <div class="bg-slider">
@@ -51,9 +63,11 @@
         </div>
         </header>
         <div class="introduction">
-            <h1>Introduction</h1>
+            <h1 id="1">Introduction</h1>
             <div class="content" id="content01">
+                <div>
                 <img src="images/introduction_001.jpg" alt="intro01" width="480">
+                </div>
                 <div class="right-content">
                 <p>
                     <br>Happy Hackはいまをときめく若者がITを活用したものづくり
@@ -69,7 +83,7 @@
                 </div>
                 </div>
             </div>
-            <div class="content" id="content02">
+            <div class="content content-reverce" id="content02">
                 <div class="left-content">
                 <p>
                     <br>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミ
@@ -83,7 +97,9 @@
                     <button type="button" class="button2">会員登録</button>
                 </div>
                 </div>
-                <img src="images/introduction_002.jpg" alt="intro02" width="480">    
+                <div>
+                    <img src="images/introduction_002.jpg" alt="intro02" width="480">    
+                </div>
             </div>
         </div>
 
@@ -92,7 +108,7 @@
         <div class="courses">
         <div id="particles-js"></div>
            
-            <h1>Courses</h1>
+            <h1 id="2">Courses</h1>
             <div class="grids">
                 <div class = "grid1">
                     <div class = "grid1_child">
@@ -152,7 +168,7 @@
 
         <!--------------------------------> 
         <div class="images">
-            <h1>Images</h1>
+            <h1 id="3">Images</h1>
             <div class = "slider_div">
             <ul class = "slider">
                 <li><img src="images/hero.jpg" alt="image01"></li>
@@ -164,7 +180,7 @@
             </div>
         </div>
         <div class="access">
-            <h1>Access</h1>
+            <h1 id="4">Access</h1>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.205633422264!2d139.73378171517032!3d35.64730498020221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b4e9f43fc59%3A0x35b6041fd95566e5!2z44Op44Kk44OV44Kk44K644OG44OD44KvKOagqikg5p2x5Lqs44Kq44OV44Kj44K5!5e0!3m2!1sja!2sjp!4v1579620368072!5m2!1sja!2sjp" width="620" height="390" frameborder="0" style="border:0; margin: auto;" allowfullscreen=""></iframe>
             </div>
